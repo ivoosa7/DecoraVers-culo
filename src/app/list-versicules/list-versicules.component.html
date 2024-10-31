@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table table-bordered table-success table-striped">
   <thead>
     <tr>
       <th scope="col">Ordem</th>
@@ -10,13 +10,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr >
-      <th scope="row"><!--{{textHolyBible.id}}</th>
+    <tr *ngFor="let textHolyBible of Verses">
+      <th scope="row">{{textHolyBible.id}}</th>
       <th scope="row">{{textHolyBible.text}}</th>
       <th scope="row">{{textHolyBible.book}}</th>
       <th scope="row">{{textHolyBible.chapter}}</th>
       <th scope="row">{{textHolyBible.verse}}</th>
-      <th scope="row">{{textHolyBible.testament}}</th>-->
+      <th scope="row">{{textHolyBible.testament}}</th>
     </tr>
   </tbody>
 </table>
