@@ -1,19 +1,13 @@
 {
-  "posts": [
+  "Versiculos": [ 
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "text": "No principio criou Deus os céus e a terra",
+      "book": "Gênesis",
+      "chapter": 1,
+      "verse": 1,
+      "testament": "Velho Testamento"
     }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+
+  ]
 }
