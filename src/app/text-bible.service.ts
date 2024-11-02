@@ -17,4 +17,9 @@ export class TextBibleService {
     return this.http.get<Versicule[]>(this.url)
   }
 
+  //2º Service
+  registerNewTextHolyBible(verses: Versicule): Observable<Versicule>{
+    return this.http.post<Versicule>(this.url, verses)
+  }
+
 }
