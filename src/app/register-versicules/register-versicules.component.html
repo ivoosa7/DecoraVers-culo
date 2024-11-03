@@ -1,49 +1,65 @@
 <div class="container">
     <h2>Informe os dados requeridos para cadastrar um novo versículo</h2>
-    <div class="form-container mb-3">
-        <label for="exampleFormControlInput1" 
-        class="form-label">Texto Sagrado</label>
-        <input type="text" 
-        class="form-control" 
-        id="exampleFormControlInput1" 
-        placeholder="Digite o texto que deseja decorar"
-        required>
-      </div>
-      <div class="form-container mb-3">
-        <label for="exampleFormControlInput1" 
-        class="form-label">Nome do Livro</label>
-        <input type="text" 
-        class="form-control" 
-        id="exampleFormControlInput1" 
-        placeholder="Digite o nome do livro bíblico"
-        required>
-      </div>
-      <div class="form-container mb-3">
-        <label for="exampleFormControlInput1" 
-        class="form-label">Capítulo</label>
-        <input type="number" 
-        class="form-control" 
-        id="exampleFormControlInput1" 
-        placeholder="Digite o número do capítulo"
-        required>
-      </div>
-      <div class="form-container mb-3">
-        <label for="exampleFormControlInput1" 
-        class="form-label">Versículo</label>
-        <input type="number" 
-        class="form-control" 
-        id="exampleFormControlInput1" 
-        placeholder="Digite o número do versículo"
-        required>
-      </div>
-      <div class="form-container mb-3">
-        <label for="exampleFormControlInput1" 
-        class="form-label">Testamento</label>
-        <input type="text" 
-        class="form-control" 
-        id="exampleFormControlInput1" 
-        placeholder="Digite o testamento do texto"
-        required>
-      </div>
-      <button type="button" class="btn btn-success">Salvar</button>
+        <form [formGroup]="formGroupVerses">
+            <div class="form-container mb-3">
+                <label for="text" 
+                class="form-label">Texto Sagrado</label>
+                <input 
+                formControlName="text"
+                type="text" 
+                class="form-control" 
+                id="text" 
+                placeholder="Digite o texto que deseja decorar"
+                required>
+              </div>
+              <div class="form-container mb-3">
+                <label for="book" 
+                class="form-label">Nome do Livro</label>
+                <input 
+                type="text" 
+                formControlName="book"
+                class="form-control" 
+                id="book" 
+                placeholder="Digite o nome do livro bíblico"
+                required>
+              </div>
+              <div class="form-container mb-3">
+                <label for="chapter" 
+                class="form-label">Capítulo</label>
+                <input 
+                type="number"
+                formGroupName="chapter" 
+                class="form-control" 
+                id="chapter" 
+                placeholder="Digite o número do capítulo"
+                required>
+              </div>
+              <div class="form-container mb-3">
+                <label for="verse" 
+                class="form-label">Versículo</label>
+                <input 
+                type="number"
+                formControlName="verse" 
+                class="form-control" 
+                id="verse" 
+                placeholder="Digite o número do versículo"
+                required>
+              </div>
+              <div class="form-container mb-3">
+                <label for="testament" 
+                class="form-label">Testamento</label>
+                <input 
+                type="text"
+                formControlName="testament" 
+                class="form-control" 
+                id="testament" 
+                placeholder="Digite o testamento do texto"
+                required>
+              </div>
+              <button 
+              type="button" 
+              class="btn btn-success"
+              (click)="save()"
+              >Salvar</button>
+        </form>
 </div>
