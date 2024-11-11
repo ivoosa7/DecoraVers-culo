@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TextBibleService } from '../text-bible.service';
 import { Versicule } from '../Versicule';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-list-versicules',
@@ -11,7 +12,9 @@ export class ListVersiculesComponent implements OnInit {
 
   Verses: Versicule [] = [];
 
-  constructor(private service:TextBibleService) { }
+  constructor(private service:TextBibleService,
+              private router:Router
+  ) { }
 
   ngOnInit(): void {
     this.LoadVerses()
@@ -21,6 +24,10 @@ export class ListVersiculesComponent implements OnInit {
     this.service.getTextHolyBible().subscribe({
       next: data => this.Verses = data
     })
+  }
+
+  goToRegister(id: Number){
+    this.router.navigate(['/Register', id]);
   }
 
 

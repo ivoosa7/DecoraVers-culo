@@ -2,8 +2,7 @@
     <h2>Informe os dados requeridos para cadastrar um novo versículo</h2>
         <form [formGroup]="formGroupVerses">
             <div class="form-container mb-3">
-                <label for="text" 
-                class="form-label">Texto Sagrado</label>
+                <label for="text" class="form-label">Texto Sagrado</label>
                 <input 
                 formControlName="text"
                 type="text" 
@@ -59,7 +58,7 @@
               <button 
               type="button" 
               class="btn btn-success"
-              (click)="save()"
+              (click)="saveNewTextHolyBible()"
               >Salvar</button>
         </form>
 </div>

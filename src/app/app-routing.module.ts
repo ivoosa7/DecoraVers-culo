@@ -7,7 +7,8 @@ import { RegisterVersiculesComponent } from './register-versicules/register-vers
 const routes: Routes = [
   {path: 'Versicules', component: ListVersiculesComponent},
   {path: 'Home', component: HomeComponent},
-  {path: 'Register', component: RegisterVersiculesComponent}
+  {path: 'Register', component: RegisterVersiculesComponent},
+  {path: 'Register/:id', component: RegisterVersiculesComponent}
 ];
 
 @NgModule({

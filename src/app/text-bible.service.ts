@@ -22,4 +22,14 @@ export class TextBibleService {
     return this.http.post<Versicule>(this.url, verses)
   }
 
+  //3º Service 
+  updateTextHolyBible(verses: Versicule): Observable<Versicule>{
+    return this.http.put<Versicule>(`${this.url}/${verses.id}`, verses)
+  }
+
+  //4º Service 
+  getVersesById(id: Number): Observable<Versicule>{
+    return this.http.get<Versicule>(`${this.url}/${id}`)
+  }
+
 }

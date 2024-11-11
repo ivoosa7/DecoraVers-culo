@@ -7,6 +7,14 @@
       "chapter": 1,
       "verse": 1,
       "testament": "Velho Testamento"
+    },
+    {
+      "id": 2,
+      "text": "Vós, porém, sois raça eleita, nação santa, sacerdócio real, povo de propriedade exclusiva de Deus, a fim de proclamardes as virtudes daquele que vós chamou das trevas para a sua maravilhosa luz.",
+      "book": "1 Pedro",
+      "chapter": 2,
+      "verse": 9,
+      "testament": "Novo Testamento"
     }
 
   ]
