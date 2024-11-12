@@ -25,7 +25,7 @@ export class RegisterVersiculesComponent implements OnInit{
               chapter   : [''], 
               verse     : [''],
               testament : ['']
-    })
+    });
               }
 
   ngOnInit(): void {
